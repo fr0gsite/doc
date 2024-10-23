@@ -46,5 +46,4 @@ In the case that an unauthorized person gets access to the Private key from the 
 ## What are the official channels ?
 
 * [Telegram](https://t.me/fr0gsite)
-* [X.com](https://twitter.com/fr0gsite)
  

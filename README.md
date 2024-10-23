@@ -11,7 +11,6 @@ order: 1000
 <p align="center">
     <a href="https://github.com/fr0gsite/doc/discussions"><img src="https://img.shields.io/badge/Discussions-gray.svg?logo=github" alt="GitHub Discussions"></a>
     <a href="https://t.me/fr0gsite"><img src="https://img.shields.io/badge/Telegram-white.svg?logo=telegram" alt="Telegram"></a>
-    <a href="https://twitter.com/fr0gsite"><img src="https://img.shields.io/badge/Twitter-white.svg?logo=twitter" alt="Twitter"></a>
     <a href="https://doc.fr0g.site"><img src="https://img.shields.io/badge/Doc-blue.svg" alt="Doc"></a>
     <a href="https://fr0g.site/"><img src="https://img.shields.io/badge/Website-blue.svg" alt="Website"></a>
 </p>

@@ -1,0 +1,36 @@
+input: .
+output: .retype
+url: doc.fr0g.site
+branding:
+  title: fr0gsite
+  logo: /static/logo_b128.png
+  logoDark: /static/logo_w128.png
+  label: Docs
+edit:
+  repo: github.com/fr0gsite/doc
+links:
+  - text: Home
+    link: /README.md
+    icon: home
+
+  - text: Issues
+    link: https://github.com/fr0gsite/doc/issues
+    icon: issue-opened
+    target: blank
+
+  - text: Discussions
+    link: https://github.com/fr0gsite/doc/discussions
+    icon: comment-discussion
+    target: blank
+
+  - text: GitHub
+    link: https://github.com/fr0gsite/doc
+    icon: mark-github
+    target: blank
+    
+  - text: Telegram
+    link: https://t.me/fr0gsite
+    target: blank
+
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."

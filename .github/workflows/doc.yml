@@ -6,12 +6,12 @@ on:
       - main
 
 jobs:
-  permissions:
+  publish:
+    permissions:
       contents: write
       issues: read
       pull-requests: write
 
-  publish:
     name: Publish to retype branch
 
     runs-on: ubuntu-latest

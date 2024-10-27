@@ -22,13 +22,12 @@ Violation of these rules will result in punishment, but does not result in perma
 
 5. Vandalism or spamming. Repost of content in short intervals.
 6. Planning or executing of violence.
-7. Sharing of pictures or videos if affected/shown people forbidden it.
+7. Sharing of pictures or videos if affected/shown people publicly forbidden it.
 8. Reveal anonymity of individuals without their consent.
-9. Violation of the minimum quality standard of the content, found [here](/rules/content-quality/).
-10. No offense to religious beliefs. Criticism is allowed.
-11. [sfw, nsfw and nsfl](/rules/filter/) content must be marked accordingly for uploads. Violation of this rule will be punished, but does not result in permanent exclusion.
+9. Violation of the minimum [quality standards for the content](/rules/content-quality/) or misleading thumbnail.
+10. [sfw, nsfw and nsfl](/rules/filter/) content must be marked accordingly for uploads.
 
-**All words and terms are allowed on the platform.**
+**All words and terms are allowed on the platform. No one can be punished for using a word**
 
 If you want to know how the reporting process works [look here](/archtitecture/report). 
 

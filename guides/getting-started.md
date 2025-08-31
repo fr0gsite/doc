@@ -6,6 +6,8 @@ tags: [guide]
 
 # Getting Started
 
+[!embed aspect="16:9" width="640"](https://www.youtube.com/embed/C0DPdy98e4c)
+
 ## Overview
 
 This guide will help you to get started with the fr0gsite platform. It will guide you through the process of creating an account and uploading content.

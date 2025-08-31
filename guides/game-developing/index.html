@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809437579668">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.809941939969">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Game developing</title>
     <meta name="title" content="Game developing">
-    <meta name="description" content="The blockchain allows games to run on it.">
+    <meta name="description" content="The frontend is flutter. You can use the game framework Flame.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://doc.fr0g.site/guides/game-developing/">
@@ -20,21 +20,21 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://doc.fr0g.site/guides/game-developing/">
     <meta property="og:title" content="Game developing">
-    <meta property="og:description" content="The blockchain allows games to run on it.">
+    <meta property="og:description" content="The frontend is flutter. You can use the game framework Flame.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://doc.fr0g.site/guides/game-developing/">
     <meta property="twitter:title" content="Game developing">
-    <meta property="twitter:description" content="The blockchain allows games to run on it.">
+    <meta property="twitter:description" content="The frontend is flutter. You can use the game framework Flame.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.809437579668" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.809941939969" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.809437579668" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.809941939969" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.809437579668" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.809941939969" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -253,8 +253,40 @@
         <span>Game developing</span>
     </h1>
 </doc-anchor-target>
-<p>The blockchain allows games to run on it.</p>
-<p>A short tutorial will be created when the time is right</p>
+<p>The frontend is flutter. You can use the game framework <a href="https://pub.dev/packages/flame">Flame</a>.</p>
+<p>The backend is a smart contract on the blockchain.
+To build and deploy a smart contract you can install <a href="https://github.com/VaultaFoundation/Bolt">Bolt</a>
+which has all the necessary dependencies and allows you to get started quickly.</p>
+<p>After the installation of Bolt you need to change the <strong>bolt.config.js</strong> to deploy your contract</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">module.exports = {
+    networks:{
+        fr0g: {
+            node_url: 'https://testnet.fr0g.site:8443',
+            chain: 'fr0g',
+            accounts: [
+                {
+                    name: 'your-accountname',
+                    // permission: 'owner', // defaults to active
+                    private_key: process.env.PRIVATE_KEY
+                }
+            ]
+        }
+    },
+}</code></pre>
+</doc-codeblock></div>
+<p>and add an file named <strong>deployments/fr0g.ts</strong> where you add your account name</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">odule.exports = async (deployer) =&gt; {
+    const contract = await deployer.deploy('your-account', 'build/contract', {
+        addCode: true
+    }).catch(err =&gt; {
+        console.error(err)
+        process.exit(1);
+    })
+}</code></pre>
+</doc-codeblock></div>
+<p>After making these adjustments, you can use <strong>bolt build &amp;&amp; bolt deploy fr0g</strong> to build and deploy your contract.</p>
 
                                 <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
